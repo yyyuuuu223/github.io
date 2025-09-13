@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跳转到WhatsApp...</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f9f5f0 0%, #f0e6dc 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .container {
+      padding: 50px 20px;
+      max-width: 600px;
+    }
+    .countdown {
+      font-size: 24px;
+      font-weight: bold;
+      color: #25D366;
+      margin: 20px 0;
+    }
+    .btn-direct {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fab fa-whatsapp"></i> 正在跳转到WhatsApp</h1>
+    <div class="countdown">页面将在 <span id="count">5</span> 秒后自动跳转</div>
+    <p>如果页面没有自动跳转，请点击下方按钮</p>
+    <a href="https://wa.me/8613912345678?text=您好，我想咨询奢侈品代购服务" id="directLink" class="btn-direct">立即跳转到WhatsApp</a>
+  </div>
+
+  <script>
+    // 设置您的WhatsApp号码和消息
+    const whatsappNumber = '8613912345678'; // 请替换为您的号码
+    const message = '您好，我想咨询奢侈品代购服务'; // 请替换为您的消息
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    // 更新直接链接
+    document.getElementById('directLink').href = whatsappUrl;
+
+    // 倒计时跳转
+    let seconds = 5;
+    const countdownElement = document.getElementById('count');
+    const countdownInterval = setInterval(() => {
+      seconds--;
+      countdownElement.textContent = seconds;
+      
+      if (seconds <= 0) {
+        clearInterval(countdownInterval);
+        window.location.href = whatsappUrl;
+      }
+    }, 1000);
+  </script>
+
+  <!-- 只在需要时加载Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
