@@ -3,7 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>奢侈品代购 - 尊享服务</title>
+    
+    <!-- Open Graph 元标签 - 控制TikTok卡片显示 -->
+    <meta property="og:title" content="奢侈品代购｜全球直采｜正品保证">
+    <meta property="og:description" content="爱马仕、香奈儿、LV等顶级品牌代购，专业买手一对一服务">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+    <meta property="og:url" content="https://yourdomain.com/luxury-shopping">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card 元标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="奢侈品代购｜全球直采｜正品保证">
+    <meta name="twitter:description" content="爱马仕、香奈儿、LV等顶级品牌代购，专业买手一对一服务">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80">
+    
+    <title>奢侈品代购｜尊享服务</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -288,6 +302,51 @@
                 height: 250px;
             }
         }
+        
+        .card-preview {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 30px auto;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        
+        .card-preview h3 {
+            color: #c89b3c;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .preview-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .preview-content {
+            padding: 10px;
+        }
+        
+        .preview-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .preview-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .preview-url {
+            color: #999;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -297,8 +356,19 @@
             <i class="fas fa-crown"></i>
         </div>
         
-        <h1>尊享奢侈品代购服务</h1>
-        <p class="subtitle">全球顶级品牌，专属定制购物体验</p>
+        <h1>奢侈品代购WhatsApp跳转页面</h1>
+        <p class="subtitle">在TikTok私信中发送此页面链接将显示为小卡片形式</p>
+        
+        <!-- TikTok卡片预览 -->
+        <div class="card-preview">
+            <h3>TikTok私信中将显示为这样的小卡片</h3>
+            <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="预览图" class="preview-image">
+            <div class="preview-content">
+                <div class="preview-title">奢侈品代购｜全球直采｜正品保证</div>
+                <div class="preview-description">爱马仕、香奈儿、LV等顶级品牌代购，专业买手一对一服务</div>
+                <div class="preview-url">yourdomain.com</div>
+            </div>
+        </div>
         
         <!-- 轮播图 -->
         <div class="carousel">
@@ -312,9 +382,6 @@
                 <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="奢侈品包">
                 </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="珠宝首饰">
-                </div>
             </div>
             
             <button class="carousel-control prev">
@@ -326,7 +393,6 @@
             
             <div class="carousel-indicators">
                 <div class="carousel-indicator active"></div>
-                <div class="carousel-indicator"></div>
                 <div class="carousel-indicator"></div>
                 <div class="carousel-indicator"></div>
             </div>
@@ -350,26 +416,18 @@
             </div>
         </div>
         
-        <p>我们提供爱马仕、香奈儿、路易威登等顶级奢侈品的专业代购服务，全程一对一咨询，确保您获得心仪的商品。</p>
-        
-        <div class="brands">
-            <span class="brand">HERMÈS</span>
-            <span class="brand">CHANEL</span>
-            <span class="brand">LOUIS VUITTON</span>
-            <span class="brand">GUCCI</span>
-            <span class="brand">PRADA</span>
-            <span class="brand">DIOR</span>
-        </div>
-        
         <div class="countdown">页面将在 <span id="count">5</span> 秒后自动跳转</div>
         
         <a href="https://wa.me/8613912345678?text=您好，我想咨询奢侈品代购服务。" class="button">通过WhatsApp咨询</a>
         
         <p class="note">如果页面没有自动跳转，请点击上方按钮</p>
         
-        <div class="language-switcher">
-            <button class="lang-btn active" onclick="showLanguage('chinese')">中文</button>
-            <button class="lang-btn" onclick="showLanguage('english')">English</button>
+        <div class="deploy-instructions">
+            <h3>部署说明：</h3>
+            <p>1. 将本文件上传到您的服务器</p>
+            <p>2. 修改代码中的Open Graph元标签内容</p>
+            <p>3. 更新WhatsApp号码和预设消息</p>
+            <p>4. 在TikTok私信中发送您部署后的页面链接</p>
         </div>
     </div>
 
@@ -454,11 +512,6 @@
                 countdownElement.textContent = "0";
             }
         }, 1000);
-        
-        // 语言切换功能
-        function showLanguage(lang) {
-            alert("演示模式：在实际使用中，这里会切换到" + lang + "版本");
-        }
     </script>
 </body>
 </html>
